@@ -1,4 +1,4 @@
-# SDFEMap - et kortmodul til indlejring
+﻿# SDFEMap - et kortmodul til indlejring
 
 [Kortforsyningen](https://kortforsyningen.dk) har udviklet et modul til indlejring af baggrundskort på hjemmesider. Modulet er tiltænkt webudviklere der har brug for en let implementerbar og fleksibel kortvisning på egen hjemmeside.
 
@@ -72,7 +72,7 @@ Der kan sættes et antal parametre, som styrer udseendet af det kortet. Her er e
     target: 'map',
     token: 'InsertYourTokenHere',
     background: 'orto_foraar',
-    zoomBar: true,
+    zoomSlider: true,
     searchBar: true,
     myLocation: true,
     layerSwitcher: true,
@@ -102,9 +102,9 @@ Man kan vælge imellem disse fire forskellige baggrundskort:
 - `forvaltning`           (Kort til forvaltning - uden navne)
 - `orto_foraar`           (ortofoto)
 
-#### `zoomBar`
+#### `zoomSlider`
 
-Angiv om Zoombar skal vises.
+Angiv om Zoombaren skal vises.
 Mulige værdier: `true` , `false`. Standard = `true`.
 
 #### `searchbar`
