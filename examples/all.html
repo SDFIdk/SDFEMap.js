@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Indlejring med søgefelt, zoombar, etc..</title>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script type="text/javascript" src="https://apps.kortforsyningen.dk/kortviserIndlejring/js/SDFEMap.js"></script>
+    <script>
+      var map = new SDFEMap.map({
+        target: 'map',
+        token: 'InsertYourTokenHere',
+        background: 'orto_foraar',
+        zoomBar: true,
+        searchBar: true,
+        myLocation: true,
+        layerSwitcher: true,
+        view: {
+          center: [574762, 6220951],
+          zoom: 11
+        }
+      })
+    </script>
+  </body>
+</html>
