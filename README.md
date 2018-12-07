@@ -1,4 +1,4 @@
-﻿# SDFEMap - et kortmodul til indlejring
+# SDFEMap - et kortmodul til indlejring
 
 [Kortforsyningen](https://kortforsyningen.dk) har udviklet et modul til indlejring af baggrundskort på hjemmesider. Modulet er tiltænkt webudviklere der har brug for en let implementerbar og fleksibel kortvisning på egen hjemmeside.
 
@@ -62,7 +62,7 @@ Download filen: `https://apps.kortforsyningen.dk/kortviserIndlejring/js/SDFEMap.
 
 ### Parametre
 
-Der kan sættes et antal parametre, som styrer udseendet af det kortet. Her er et kode-eksempel på hvordan det kan se ud. (se eksempler i mappen `examples`).
+Der kan sættes et antal parametre, som styrer udseendet af kortet. Her er et kode-eksempel på hvordan det kan se ud. (se eksempler i mappen `examples`).
 
 ```html
 <div id="map">
