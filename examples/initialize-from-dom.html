@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Indlejring via attributter i html</title>
+  <link href="../lib/SDFEMap.css" rel="stylesheet"><script type="text/javascript" src="../lib/SDFEMap.js"></script></head>
+  <body>
+    <span
+      class="geomarker"
+      data-type="some-type"
+      data-title="The marker title"
+      data-description="The marker description"
+      data-address="Langebrogade 6, 1411 København K">
+    </span>
+    <span
+        class="geomarker"
+        data-type="some-type"
+        data-title="The marker title"
+        data-description="The marker description"
+        data-address="Vesterbrogade 13, 1620 København">
+    </span>
+    <span
+      class="geomarker"
+      data-type="another-type"
+      data-title="The third title"
+      data-description="The marker description"
+      data-lat="55.673658"
+      data-lon="12.487775">
+    </span>
+
+    <span
+      class="geomarker"
+      data-type="a-third-type"
+      data-title="SDFE"
+      data-description="her er SDFE"
+      data-lat="55.705024"
+      data-lon="12.535406"
+    ></span>
+
+    <div
+      id="this-is-the-unique-id"
+      class="geomap"
+      data-type=""
+      data-center="auto"
+      data-zoom="auto"
+      data-background="dtk_skaermkort_daempet"
+      data-mylocation="false"
+      data-fullscreen="false"
+      data-zoomslider="false"
+      data-layerswitcher="false"
+      data-token="429ab1e1fe1cbaf869952a89f473d593">
+    </div>
+
+    <div
+      style="width:300px; height:300px; padding:20px;"
+      id="this-is-another-unique-id"
+      class="geomap"
+      data-type="another-type"
+      data-center="auto"
+      data-zoom="9"
+      data-background="dtk_skaermkort_daempet"
+      data-show-popup="false"
+      data-mylocation="false"
+      data-fullscreen="false"
+      data-zoomslider="false"
+      data-scaleline="false"
+      data-layerswitcher="false"
+      data-token="429ab1e1fe1cbaf869952a89f473d593">
+    </div>
+
+    <script>
+      var map = new SDFEMap.Initialize({
+        icons: {
+          'some-type': 'custom.png'
+        }
+      });
+    </script>
+
+  </body>
+</html>
